@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="My Related Task">
+        
+
+            <p class="slds-p-left_small">Record ID :{recordId}</p>
+            <template for:each={taskList} for:item="taskRec">
+                <div class="slds-p-around_medium" key={taskRec.Id}>
+                   Sub : {taskRec.Subject} - Date : {taskRec.ActivityDate} - Comment : {taskRec.Description}
+                </div>
+
+     
+</template>
+</lightning-card>
+</template>
