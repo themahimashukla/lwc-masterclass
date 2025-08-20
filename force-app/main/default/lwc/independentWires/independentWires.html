@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="My 5 Cases">
+        <template if:true={foundCase}>
+            <template for:each={caseList} for:item="caseRec">
+                <ul key={caseRec.Id} class="slds-list_dotted">
+
+                    <li>Case Origin : {caseRec.Origin}</li>
+                    <li> Case Subject : {caseRec.Subject}</li>
+                    <li> Case Description : {caseRec.Description}</li>
+                </ul>
+            </template>
+
+        </template>
+
+
+    </lightning-card>
+    <lightning-card title="My 5 Tasks">
+        <template if:true={foundTask}>
+            <template for:each={taskList} for:item="task">
+                <ul key = {task.Id} class="slds-list_dotted">
+                    <li>Task ActivityDate : {task.ActivityDate} </li>
+                    <li>Task Subject : {task.Subject}</li>
+                    <li>Task Description : {task.Description}</li>
+                </ul>
+
+            </template>
+        </template>
+
+
+    </lightning-card>
+</template>
