@@ -1,0 +1,6 @@
+<template>
+    <lightning-card title="Parent component" >
+        <p class="slds-p-left_small">received this value from child : {showProduct}</p>
+        <c-child-event-trigger onsendproductselected = {handleProductSelection} ></c-child-event-trigger>
+    </lightning-card>
+</template>
